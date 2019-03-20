@@ -1,0 +1,18 @@
+package com.capgemini.studentexception.tests;
+
+import static org.junit.Assert.assertNotNull;
+
+
+import org.junit.Test;
+
+import com.capgemini.studentexception.main.Date;
+
+class DateTest {
+
+	@Test
+	public void testtoCheckObjectIsUsingDefaultConstructor() {
+		Date date = new Date();
+		assertNotNull(date);
+	}
+
+}

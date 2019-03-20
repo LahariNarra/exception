@@ -1,0 +1,12 @@
+package com.capgemini.studentexception.exception;
+
+import com.capgemini.studentexception.main.Student;
+
+public class StudentException extends RuntimeException {
+
+	public StudentException(String message) {
+		super(message);
+	}
+	
+
+}

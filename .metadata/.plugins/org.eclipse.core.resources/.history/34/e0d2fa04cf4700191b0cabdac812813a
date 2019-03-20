@@ -1,0 +1,23 @@
+package com.capgemini.studentexception.tests;
+
+import static org.junit.Assert.assertNotNull;
+
+import org.junit.Test;
+
+import com.capgemini.studentexception.exception.CountryException;
+import com.capgemini.studentexception.main.TaxCalculator;
+
+class TaxCalculatorTest {
+
+	@Test
+	public void testToCheckObjectIsCreatedByDefaultConstructor() {
+		TaxCalculator taxCalculator = new TaxCalculator();
+		assertNotNull(taxCalculator);
+	}
+	
+	@Test
+	public void testToCheckValidCountry() throws CountryException{
+		TaxCalculator taxCalculator = new TaxCalculator("Lahari","Indian",150000);
+		
+	}
+}

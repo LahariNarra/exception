@@ -1,0 +1,21 @@
+package com.capgemini.studentexception.tests;
+
+import static org.junit.Assert.assertNotNull;
+
+import org.junit.jupiter.api.Test;
+
+import com.capgemini.studentexception.main.Student;
+
+public class StudentTest {
+
+	@Test
+	public void testToCheckWithconstructor() {
+		Student student = new Student();
+		assertNotNull(student);
+	}
+	
+
+	public void testToCheckAgeisWithinRange() {
+		
+	}
+}

@@ -1,0 +1,60 @@
+package com.capgemini.studentexception.main;
+
+import org.hamcrest.core.IsNull;
+
+import com.capgemini.studentexception.exception.CountryException;
+import com.capgemini.studentexception.exception.NameException;
+import com.capgemini.studentexception.exception.NotEligibleException;
+
+public class TaxCalculator {
+	private String employeeName;
+	private String employeeCountry;
+	private double employeeSalary;
+	private double taxAmount;
+
+	public TaxCalculator() {
+		super();
+	}
+
+	public TaxCalculator(String employeeName, String employeeCountry, double employeeSalary)
+			throws CountryException, NameException {
+		super();
+		
+		if (employeeName != null && !employeeName.isEmpty())
+			this.employeeName = employeeName;
+		else
+				throw new NameException("Name is not valid exception");
+		if (employeeCountry == "Indian")
+			this.employeeCountry = employeeCountry;
+		else
+			throw new CountryException("Country is Not valid exception");
+		this.employeeSalary = employeeSalary;
+	}
+
+	
+	public double getEmployeeSalary() {
+		return employeeSalary;
+	}
+
+	public void setEmployeeSalary(double employeeSalary) {
+		this.employeeSalary = employeeSalary;
+	}
+
+	public double calculateTax(double employeeSalary) {
+		if (employeeSalary >= 100000)
+			taxAmount = (employeeSalary * 8) / 100;
+		return taxAmount;
+		if (employeeSalary >= 50000 && employeeSalary < 100000)
+			taxAmount = (employeeSalary * 6) / 100;
+		return taxAmount;
+		if (employeeSalary >= 30000 && employeeSalary < 50000)
+			taxAmount = (employeeSalary * 5) / 100;
+		return taxAmount;
+		if (employeeSalary >= 30000 && employeeSalary < 10000)
+			taxAmount = (employeeSalary * 4) / 100;
+		return taxAmount;
+		if(employeeSalary<30000)
+			throw new NotEligibleException("Your salary is not eligible for tax");
+	}
+
+}

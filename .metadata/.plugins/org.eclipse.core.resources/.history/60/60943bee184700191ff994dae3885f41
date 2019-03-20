@@ -1,0 +1,32 @@
+package com.capgemini.studentexception.tests;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.Test;
+
+import com.capgemini.studentexception.exception.StudentException;
+import com.capgemini.studentexception.main.Student;
+
+public class StudentTest {
+
+	@Test
+	public void testToCheckWithconstructor() {
+		Student student = new Student();
+		assertNotNull(student);
+	}
+
+	@Test(expected = StudentException.class)
+	public void testToCheckAgeisNotWithinRange() {
+		Student student = new Student();
+		student.ageException(22);
+
+	}
+	@Test()
+	public void testToCheckAgeisWithinRange() {
+		Student student = new Student();
+		assertEquals(18,student.ageException(22));
+
+	}
+}

@@ -1,0 +1,24 @@
+package com.capgemini.studentexception.tests;
+
+import static org.junit.Assert.assertNotNull;
+
+
+import org.junit.Test;
+
+import com.capgemini.studentexception.exception.InvalidDayException;
+import com.capgemini.studentexception.main.Date;
+
+class DateTest {
+
+	@Test
+	public void testtoCheckObjectIsUsingDefaultConstructor() {
+		Date date = new Date();
+		assertNotNull(date);
+	}
+	
+	@Test
+	public void testToCheckDayIsValid() throws InvalidDayException {
+		Date date =new Date(25,12,1997);
+	}
+
+}

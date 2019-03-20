@@ -1,0 +1,52 @@
+package com.capgemini.studentexception.main;
+
+public class Student extends Exception {
+	private int studentRegNo;
+	private String studentName;
+	private int studentAge;
+	private String studentcourse;
+
+	public Student() {
+		super();
+	}
+	
+
+	public Student(String message) {
+		super(message);
+		
+	}
+
+
+	public Student(int studentRegNo, String studentName, int studentAge, String studentcourse) {
+		super();
+		this.studentRegNo = studentRegNo;
+		this.studentName = studentName;
+		this.studentAge = studentAge;
+		this.studentcourse = studentcourse;
+	}
+
+	public String getStudentName() {
+		return studentName;
+	}
+
+	public void setStudentName(String studentName) {
+		this.studentName = studentName;
+	}
+
+	public int getStudentAge() {
+		return studentAge;
+	}
+
+	public void setStudentAge(int studentAge) {
+		this.studentAge = studentAge;
+	}
+	public void ageException(int studentAge) throws Student {
+		if(studentAge>=15 && studentAge<=21)
+			System.out.println("Age is within range");
+		else
+			throw new Student("Age is Not within range exeception");
+	}
+
+	
+
+}
