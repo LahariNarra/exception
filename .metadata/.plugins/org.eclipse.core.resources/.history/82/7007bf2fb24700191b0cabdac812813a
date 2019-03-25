@@ -1,5 +1,0 @@
-package com.capgemini.studentexception.exception;
-
-public class InvalidInputException extends Exception {
-
-}

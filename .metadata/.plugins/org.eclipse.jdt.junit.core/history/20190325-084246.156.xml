@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="BankAccountTest" project="exeception-assignments" tests="6" started="6" failures="0" errors="0" ignored="0">
+  <testsuite name="com.capgemini.studentexception.tests.BankAccountTest" time="0.001">
+    <testcase name="tesBankAccountIsCreatedWithDefaultConstructor" classname="com.capgemini.studentexception.tests.BankAccountTest" time="0.0"/>
+    <testcase name="tesBankAccountIsCreatedWithParametrizedConstructor" classname="com.capgemini.studentexception.tests.BankAccountTest" time="0.001"/>
+    <testcase name="testDeposit" classname="com.capgemini.studentexception.tests.BankAccountTest" time="0.0"/>
+    <testcase name="testBankAccountCurrentBalance" classname="com.capgemini.studentexception.tests.BankAccountTest" time="0.0"/>
+    <testcase name="testWithdrawWithInSufficientFund" classname="com.capgemini.studentexception.tests.BankAccountTest" time="0.0"/>
+    <testcase name="testWithdrawWithSufficientFund" classname="com.capgemini.studentexception.tests.BankAccountTest" time="0.0"/>
+  </testsuite>
+</testrun>

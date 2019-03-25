@@ -19,4 +19,6 @@
 <fullyQualifiedTypeName name="com.capgemini.studentexception.main.TaxCalculator"/>
 <fullyQualifiedTypeName name="org.hamcrest.core.IsNull"/>
 <fullyQualifiedTypeName name="com.capgemini.studentexception.tests.TaxCalculatorTest"/>
+<fullyQualifiedTypeName name="com.capgemini.studentexception.main.BankAccount"/>
+<fullyQualifiedTypeName name="com.capgemini.studentexception.exception.LowBalanceException"/>
 </qualifiedTypeNameHistroy>

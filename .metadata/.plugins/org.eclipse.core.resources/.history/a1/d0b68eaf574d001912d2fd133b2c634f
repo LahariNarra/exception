@@ -1,0 +1,5 @@
+package com.capgemini.studentexception.main;
+
+public class BankAccount {
+
+}
